@@ -1,0 +1,23 @@
+print("Welcome to your very own Choose Your Own Adventure story!\n Are you ready to begin?" )
+beginanswer= input("Yes or No?")
+if beginanswer == "Yes":
+    userage = int(input("Great! Lets begin! \n First, enter your age:"))
+    print("One day when you were " + str(userage) + " years old, your dad told you about a temple.")
+    noworlater = input("Do you want to look for the temple now or later?")
+    if noworlater == "now":
+        print("You ask your dad “Can I take a ride in the jeep?” Your dad says “Sure!”. So, you get in the jeep and was getting ready to go, but right before you begin, you hear a rustling sound, like a piece of paper being torn. You look over and you see a piece of paper under the tire. You look at it, and it’s a map!")
+        inspectordrive = input("Do you inspect the map or start driving?")
+        if inspectordrive == "inspect map":
+            print("You see an X marks the spot at your house! You wonder if your dad did this, but no, it couldn’t be. Then you remembered that your uncle recently left. He must have been the one to drop it. You follow the map and find another map hidden where the x was! When you follow the 2nd map, it leads you to the front of the Lost Temple! THE END")
+        elif inspectordrive == "start driving":
+            print("You start driving but the gas tank is empty and the car stalls out! Too bad, you have to walk home and cant look for the temple today :( THE END.")
+    elif noworlater == "later":
+        print("Now you are " + str(int(userage +3)) + " and ready to  find the temple! You go outside and start riding your bike around the neighborhood. Then a cat runs right in front of you, and you have to stop immediately. ") 
+        catorride = input("Do you check on the cat or keep riding?")
+        if catorride == "check on the cat":
+            print("As you look at the cat, it cuddles up to you and you fall in love immediately. You decide this cat is way more awesome then a temple and decide to take it home. You have a new family pet! THE END.")
+        elif catorride == "keep riding":
+            print(" You notice the cat keeps running in front of you like it is trying to get you to follow it. You let it lead you down an ally and find a water bottle. You get closer, and notice that there is a paper in it. You open it and find a map in the bottle. You follow it and find a temple! There are a few people there, they look at the cat and say “Thank you so much for finding our king's cat!” You give them the cat and in return they give you some gold coins AND a cat! It was the best day of your life. THE END")
+elif beginanswer != "Yes":
+    print("I guess you'll miss out on all the fun! See ya later!")
+
